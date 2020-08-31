@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel=" stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+
+<body>
+
+    <form action="/message" method="post" id="form-modal">
+        <span class="close" onclick="document.getElementById('form-modal').style.display='none'"
+            title="Close Modal">&times;</span>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Place</label>
+            <select name="city" class="form-control form-control-lg">
+                <option>Thessaloniki</option>
+                <option>Haikidiki</option>
+                <option>Athens</option>
+                <option>Mykonos</option>
+                <option>Meteora</option>
+                <option>Myrtos Beach</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Full name <span class="validation">This field
+                    must be
+                    required</span></label>
+            <input type="text" name="name" class="form-control" id="exampleFormControlInput1"
+                placeholder="Jan Kowalski">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput2">Email address <span class="validation">This field must be
+                    required</span></label>
+            <input name="email" type="email" class="form-control" id="exampleFormControlInput3"
+                placeholder="jankowalski@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Phone number <span class="validation">This field must be
+                    required</span></label>
+            <input name="number" type="text" class="form-control" id="exampleFormControlInput3"
+                placeholder="+48000000000">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Your preferences <span class="validation">This field must be
+                    required</span></label>
+            <textarea name="preferences" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+
+
+
+    <nav class="navbar navbar-expand-sm fixed-top ">
+        <a class="navbar-brand" href="#"><img src="./image/Atis.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Flights">Flights</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#hotels">Hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="blog" href="#Explore">Explore</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="team" href="#"> Restaraunts</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="contact" href="#Thing">Thing to do</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="contact" href="#">About Greece</a> </li>
+                <li class="nav-item"> <a href="#" onclick="document.getElementById('form-modal').style.display='flex'"
+                        class="myButton">Become a host</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-main">
+        <div class="main-img">
+            <img src="./image/Greece.png" alt="">
+            <p class="welcome">WELCOME TO HEAVEN</p>
+            <a href="#" class="myButton">Check offer</a>
+        </div>
+        <div class="input-block" id="Flights">
+            <img style="height: 20px;" src="./image/City.png" alt="">
+            <input placeholder="City" type="search">
+            <img style="height: 20px;" src="./image/Check In.png" alt="">
+            <input placeholder="Check In" type="search">
+            <img style="height: 20px;" src="./image/Check Out.png" alt="">
+            <input placeholder="Check Out" type="search">
+            <img style="height: 20px;" src="./image/Rooms.png" alt="">
+            <input placeholder="Rooms" type="search">
+            <img style="height: 20px;" src="./image/Adults.png" alt="">
+            <input placeholder="Adults" type="search">
+            <img style="height: 20px;" src="./image/Children.png" alt="">
+            <input placeholder="Children" type="search">
+            <img style="height: 20px;" src="./image/Star.png" alt="">
+            <input placeholder="Stars" type="search">
+            <button type="search" class="search"><img class="search-icon"
+                    src="https://img.icons8.com/ios/50/000000/search--v1.png" /></button>
+        </div>
+        <div class="most-popular">
+            <p>MOST POPULAR PLACES</p>
+        </div>
+        <div class="parent" id="Explore">
+            <div class="div1">
+                <h2>Thessaloniki</h2>
+            </div>
+            <div class="div2">
+                <h3 style="font-size: 50px;">Crete</h3>
+                <div class="button-group">
+                    <button class="myButton-crete">11 Flights</button>
+                    <button class="myButton-crete">48 Restaraunts</button>
+                    <button class="myButton-crete">32 Hotels</button>
+                </div>
+            </div>
+            <div class="div3">
+                <h2>Athens</h2>
+            </div>
+            <div class="div4">
+                <h2>Haikidiki</h2>
+            </div>
+            <div class="div5">
+                <h2>Mykonos</h2>
+            </div>
+            <div class="div6">
+                <h2>Meteora</h2>
+            </div>
+            <div class="div7">
+                <h2>Myrtos Beach</h2>
+            </div>
+        </div>
+        <div class="popular-hotels">
+            <div class="most-popular-h">
+                <p>MOST POPULAR HOTELS</p>
+            </div>
+            <div class="hotels" id="hotels">
+                <div class="hotel">
+                    <div class="info">
+                        <div class="left-info">
+                            <p>Hotel</p>
+                            <div class="icons">
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                            </div>
+                            <a href="#" class="myButton-info">View more</a>
+                        </div>
+                        <div class="right-info">
+                            <p>100$</p>
+                            <p>10 Days</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="info">
+                        <div class="left-info">
+                            <p>Hotel</p>
+                            <div class="icons">
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                            </div>
+                            <a href="#" class="myButton-info">View more</a>
+                        </div>
+                        <div class="right-info">
+                            <p>100$</p>
+                            <p>10 Days</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="info">
+                        <div class="left-info">
+                            <p>Hotel</p>
+                            <div class="icons">
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                            </div>
+                            <a href="#" class="myButton-info">View more</a>
+                        </div>
+                        <div class="right-info">
+                            <p>100$</p>
+                            <p>10 Days</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="info">
+                        <div class="left-info">
+                            <p>Hotel</p>
+                            <div class="icons">
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                            </div>
+                            <a href="#" class="myButton-info">View more</a>
+                        </div>
+                        <div class="right-info">
+                            <p>100$</p>
+                            <p>10 Days</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="hotels">
+                <div class="hotel">
+                    <div class="info">
+                        <div class="left-info">
+                            <p>Hotel</p>
+                            <div class="icons">
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                            </div>
+                            <a href="#" class="myButton-info">View more</a>
+                        </div>
+                        <div class="right-info">
+                            <p>100$</p>
+                            <p>10 Days</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="info">
+                        <div class="left-info">
+                            <p>Hotel</p>
+                            <div class="icons">
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                            </div>
+                            <a href="#" class="myButton-info">View more</a>
+                        </div>
+                        <div class="right-info">
+                            <p>100$</p>
+                            <p>10 Days</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="info">
+                        <div class="left-info">
+                            <p>Hotel</p>
+                            <div class="icons">
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                            </div>
+                            <a href="#" class="myButton-info">View more</a>
+                        </div>
+                        <div class="right-info">
+                            <p>100$</p>
+                            <p>10 Days</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="info">
+                        <div class="left-info">
+                            <p>Hotel</p>
+                            <div class="icons">
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                                <img src="https://img.icons8.com/ios-filled/50/000000/star.png" />
+                            </div>
+                            <a href="#" class="myButton-info">View more</a>
+                        </div>
+                        <div class="right-info">
+                            <p>100$</p>
+                            <p>10 Days</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="#" class="myButton1">View all offers</a>
+        </div>
+        <div class="slider" id="Thing">
+            <div class="slider-layout">
+                <h1>And then God said let there be a <span>Greece</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at vestibulum leo. Cras interdum
+                    sagittis turpis id elementum. Phasellus consectetur ante quis nunc dictum, non fermentum dui
+                    dapibus. </p>
+                <strong>John Doe, mytravels.com</strong>
+            </div>
+        </div>
+        <footer>
+            <span>Atis</span>
+            <p>ⓒ Copyright 2016. All rights reserved by symu.co</p>
+        </footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="./image/top.png" alt="">
+        </button>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "uitm-project",
+  "version": "1.0.0",
+  "description": "UITM landing page project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://dyxadevelop.github.io/Atis"
+  },
+  "keywords": [
+    "Landing",
+    "Page"
+  ],
+  "author": "Nazar Prokudin",
+  "license": "ISC",
+  "bugs": {
+    "url": "http://dyxadevelop.github.io/Atis"
+  },
+  "homepage": "http://dyxadevelop.github.io/Atis",
+  "dependencies": {
+    "add-gitignore": "^1.1.1",
+    "firebase": "^7.15.3",
+    "firebase-admin": "^8.12.1",
+    "harp": "^0.32.0",
+    "nodemon": "^2.0.4"
+  }
+}
