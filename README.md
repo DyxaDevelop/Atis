@@ -1,5 +1,5 @@
 # Atis
-Landing page with simple NodeJS serwer
+Landing page with simple NodeJS server
 
 Write your firebase config in firebaseConfig to use this project
 
